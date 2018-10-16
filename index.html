@@ -1,37 +1,57 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>用户点单</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/myjs.js"></script>
+</head>
 
-You can use the [editor on GitHub](https://github.com/oPromise/TakeoutNetwork/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<body onLoad="init(),aa()">
+<div id="box">
+<div id="top">
+<h1 style="text-align:center;">蜂鸟外卖</h1>
+<h5 style="margin-left:55%;margin-top: 15px;">---用户点单</h5>
+  <div id="div_date"></div>
+   <div id="div_time"></div>
+    </div>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/oPromise/TakeoutNetwork/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+   <div id="mind">
+   <samp style="margin-left:34px;">用户名:</samp>
+   <input type="text" placeholder="请输入用户名" id="name" style="width:160px; border:#666 1px solid; margin-left:6px; margin-top: 40px;"/> </br>
+  <samp style="margin-left:20px;">手机号码：
+  </span><input type="text" placeholder="请输入11位手机号码" id="pohne" style="width:160px; border:#666 1px solid; margin-top:25px;"/> </br>
+   <samp style="margin-left:20px;">送货地址：
+   </span><input type="text" placeholder="请输入送货地址" id="plce" style="width:160px; border:#666 1px solid; margin-top:25px;"/> </br>
+   
+   <span style="margin-left:20px;">水果选择：</span>
+          <select id="Fruits" style="margin-top: 25px;width: 160px;border: 1px #666 solid;">
+                
+          </select></br>
+        
+        <span style="margin-left:20px;">数量选择：</span>
+        <select id="number"  style="margin-top: 25px;width: 160px;border: 1px #666 solid;">
+                
+        </select></br>
+        
+            <input type="button" value="提交" style="width:160px; margin-left:94px; margin-top:25px;" onClick="submitchangpass('name','pohne','plce','number')" ；/>
+    </div>
+    <footer><h5>版权所有杭州科技职业技术学院</h5>
+            <h5>QQ:8888888&QQ邮箱:88888888@qq.com</h5>
+    </footer>
+</div>
+<div id="bg">
+<h5>点击按钮可改变背景颜色</h5>
+<input type="button" value="白色" onclick="change('white')" />
+<input type="button" value="橙色" onclick="change('Orange')"/>
+<input type="button" value="粉色" onclick="change('pink')"/>
+<input type="button" value="紫色" onclick="change('Violet')"/>
+</div>
+<!-- <div style="height:15px; width:100px; margin:0 auto;">
+  <div id="color1" onclick="changecolor2()"></div>
+  <div id="color2" onclick="changecolor1()"></div>
+  <br />
+  <p style="font-size:10px;">可选择页面颜色</p>
+</div> -->
+</body>
+</html>
