@@ -1,5 +1,5 @@
 var mydete;
-var Fruits=["西瓜汁","柠檬汁","葡萄汁"];
+var Fruits=["西瓜汁","柠檬汁","葡萄汁","蓝莓汁","草莓汁"];
 var number=["1","2","3"];
 
 function init()
